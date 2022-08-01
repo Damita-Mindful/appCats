@@ -1,0 +1,337 @@
+.home{
+    background-image: url('../img/home.jpg');
+    background-position: center center; 
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    overflow: hidden;
+    
+    /*  background-position: center center; 
+    position: relative;
+    justify-content: space-between;
+    display: flex;
+    height: 125vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100%;
+    background-attachment: fixed;
+    overflow: hidden;
+    scroll-behavior: hidden;   */ 
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    position: fixed; /*para que se mantenga fijo por mas que bajemos o subamos */
+    top: 0; left: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.container .btnmenu, .logo{
+    float: left;
+    line-height: 70px;
+    /*margin-left: 20%;*/
+}
+.container .btnmenu label{
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.logo h1{
+    color: black;
+    font-weight: normal; 
+    font-size: 28px;
+    margin-left: 10px;
+    margin-top: 18px;
+    font: bold 'Signika', sans-serif;
+}
+.container .menu {
+    float: left;
+    line-height: 70px;
+    margin-top: 5px;
+}
+
+.container .search {
+    display: inline-block;
+    padding: 15px 10px;
+    line-height: normal;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    font: bold 'Signika', sans-serif;
+}
+
+.container-menu{
+    position: absolute;
+    background: white;
+    /* width: 100%;
+    height: 100vh; */
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.inputmenu{
+    display: none;
+}
+
+.inputmenu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cont-menu{
+    width: 100%;
+    max-width: 200px;
+    background: white;
+    height: 100vh;
+    padding-top: 10%;
+    position: relative;
+    transition: all 500ms ease;
+}
+
+.cont-menu nav{   
+    transform: translateY(15%);
+    display: block; 
+}
+
+.cont-menu label {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    color: rgb(121, 115, 115);
+    font: bold 'Signika', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search {
+    float: right
+}
+
+.filterContainer{
+    display: flex;
+    justify-content: center; 
+    align-items: stretch;
+    align-content: stretch;
+    margin-top: 20px;
+    margin-left: 18px;
+    margin-right: 18px;
+    height: 40px;
+}
+
+.dami{
+    text-align: center;
+    margin-right: -7%;
+    margin-bottom: 0.5%;
+    margin-top: -15%;
+    font-family: 'Square Peg', cursive;
+    color: rgb(216, 105, 123);
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+.dami:hover{
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 80px;
+    text-shadow: 5px 5px 12px white;
+    transition: all 0.2s ease;
+}
+
+.createButton {
+    align-items:right;
+    margin-right: 3%;
+    border: none;
+    font: bold 7.5vw/1.6 'Signika', sans-serif;
+    background-color: transparent;
+    color: rgb(245, 109, 109);
+    border-radius: 50px;
+    text-align:center;
+    cursor: pointer;
+    width: 140px;
+    height: 50px;
+    font-size: 17px;
+}
+
+.createButton:hover{ 
+    background-color: #fff;
+    color: #0b0528;
+    font-weight: bolder;
+    transition-delay: 0.2s;
+    transition: 0.8s;
+}
+
+.tempsFilter {
+    border: none;
+    font: bold 7.5vw/1.6 'Signika', sans-serif;
+    background-color: transparent;
+    color: rgb(114, 91, 216);
+    border-radius: 50px;
+    text-align:center;
+    cursor: pointer;
+    width: 170px;
+    height: 50px;
+    font-size: 17px;
+}
+
+.tempsFilter:hover{
+    background-color: #fff;
+    border: none;
+    color: #0b0528;
+    font-weight: bolder;
+    transition-delay: 0.2s;
+    transition: 0.8s; 
+}
+
+.refreshButton{
+    border: none;
+    font: bold 7.5vw/1.6 'Signika', sans-serif;
+    background-color: transparent;
+    color: rgb(59, 196, 54);
+    border-radius: 50px;
+    text-align:center;
+    cursor: pointer;
+    width: 70px;
+    height: 50px;
+    font-size: 17px;
+} 
+
+.refreshButton:hover{
+    background-color: #fff;
+    border: none;
+    color: #0b0528;
+    font-weight: bolder;
+    transition-delay: 0.2s;
+    transition: 0.8s; 
+}
+
+.idFilter{
+    border: none;
+    font: bold 7.5vw/1.6 'Signika', sans-serif;
+    background-color: transparent;
+    color: rgb(209, 141, 14);
+    border-radius: 50px;
+    text-align:center;
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+    font-size: 17px;
+} 
+
+.idFilter:hover{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: #0b0528;
+    font-weight: bolder;
+    transition-delay: 0.2s;
+    transition: 0.8s; 
+}
+
+.nameOrder{
+    border: none;
+    font: bold 7.5vw/1.6 'Signika', sans-serif;
+    background-color: transparent;
+    color: rgb(158, 19, 177);
+    border-radius: 50px;
+    text-align:center;
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+    font-size: 17px;
+}
+
+.nameOrder:hover{
+    background-color: #fff;
+    border: none;
+    color: #0b0528;
+    font-weight: bolder;
+    transition-delay: 0.2s;
+    transition: 0.8s; 
+}
+
+.weightOrder{
+    border: none;
+    font: bold 7.5vw/1.6 'Signika', sans-serif;
+    background-color: transparent;
+    color: rgb(231, 144, 29);
+    border-radius: 50px;
+    text-align:center;
+    cursor: pointer;
+    width: 140px;
+    height: 50px;
+    font-size: 17px;
+}
+
+.weightOrder:hover{
+    background-color: #fff;
+    border: none;
+    color: #0b0528;
+    font-weight: bolder;
+    transition-delay: 0.2s;
+    transition: 0.8s; 
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin-top:10px;
+    margin-left: 8.5%;
+} 
+
+.catContainer {
+    display: flex;
+    text-decoration: none;
+    margin-top: 15%;
+    
+}
+
+.a {
+    text-decoration:none;
+}
+
+.back{
+    padding-top: 0%;
+    text-align:right;
+    margin-right: 3%;
+} 
+
+.backBtn{
+    border: none;
+    font: bold 7.5vw/1.6 'Signika', sans-serif;
+    background-color: transparent;
+    color: rgb(60, 123, 218);
+    border-radius: 50px;
+    text-align:center;
+    cursor: pointer;
+    width: 90px;
+    height: 50px;
+    font-size: 17px;
+}
+
+.loading{
+    font: bold 7.5vw/1.6 'Signika', sans-serif;
+    align-items: center;
+    margin-top: 20%;
+    color: white;
+    font-size: 180%;
+    font-weight: bolder;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);

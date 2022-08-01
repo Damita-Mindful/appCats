@@ -1,0 +1,83 @@
+.box{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    width: 330px;
+    height: 390px;
+    border-radius: 10px;
+    border: none;
+    border-width: thin; 
+    background-color: transparent;
+    color: #deb887; 
+    overflow: hidden;
+    margin-top: 100px;
+    text-align: center;
+    transition: all .25s;
+    text-decoration: none; 
+}
+
+.image {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    justify-content: center;
+    margin-top: 0px;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
+    margin: 20px;
+}
+
+.box:hover {
+    color: #0b0528;
+    transition-delay: 0.2s;
+    transition: 0.8s;
+    backdrop-filter: 1px;
+    position: relative;
+    top: -20px;
+    width: 300px;
+    height: 430px;
+}
+
+.breed {
+    text-decoration: 'none';
+    text-align: center;
+    font-size: 20px;
+    color:rgb(143, 134, 134); 
+    font: bold 'Signika', sans-serif;
+    margin-top: 15px;
+}
+
+/* 
+.origin {
+    font-size: 15px;
+    color:rgb(53, 243, 126);
+    text-decoration: 'none';
+    font: bold 'Signika', sans-serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+ */
+/* .temps {
+    font-size: 14px;
+    color: rgb(114, 77, 247);
+    text-decoration: 'none';
+    font: bold 'Signika', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+} */
+
+/* .friendly{
+    font-size: 14px;
+    color: rgb(238, 157, 82);
+    text-decoration: 'none';
+    font: bold 'Signika', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+} */
+
+@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
