@@ -1,95 +1,91 @@
 .bkg{
     background-image: url('../img/detail.jpg');
-    background-position: center center; 
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding-bottom: 100%;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
-    scroll-behavior: hidden;
-    
-    justify-content: space-between;
+    position: fixed;
+    background-attachment: scroll;  
 } 
+    
+    
 
 .container{
     position: absolute;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: left;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    margin-top: 110px;
+    margin-top: 20px;
     margin-left: 4%;
     width: 70%;
     height: 80%;
     text-decoration: none;
     outline: none;
     border-radius: 15px;
-    background-color: #fdf6fc73;
+    background-color: transparent;
     backdrop-filter: 1px;
-    border: #949193 1px solid;     
+    border: none;     
     text-align: center;
 } 
 
 .title{
-    color: #fff;
+    color: rgb(27, 214, 121);
     flex-direction: column;
-    font-family: Lato, Arial, Helvetica, sans-serif;
-    font-weight: normal; 
-    /*text-shadow: 6px 6px 4px rgba(44, 11, 34, 0.473); */
+    font: bold 'Signika', sans-serif;
+    font-weight: bold; 
     font-size: 45px;
     text-align: right;
     margin-right: 16%;
     margin-bottom: 1%;
+    margin-top: 5%;
 } 
 
 .text {
     font-size: 15px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: bold 'Signika', sans-serif;
     text-decoration: 'none';
-    color: #242426;
+    color: #3cd36e;
     font-weight: bolder; 
     margin-top: 0.5%;
-    padding-left: 57.5%;
+    padding-left: 52%;
     margin-right: 2%;
     margin-bottom: 1px;
     text-align: left;
 } 
 
-.details{
-    color: white;
-}
-
 a {
     text-decoration: none;
     font-weight: bold;
-    color: white;
+    color: rgb(105, 114, 240);
 }
 
 .back{
-    margin-top: 15px;
-    padding-top: 2%;
+    margin-top: 35%;
+    margin-right: 8%;
+    float: right;
 } 
 
 .backBtn{
+    float: right;
     border: none;
-    font-family: Lato, Arial, Helvetica, sans-serif;
-    background-color: rgba(209, 111, 5, 0.514);
+    font: bold 'Signika', sans-serif;
+    background-color: rgba(88, 91, 235, 0.514);
     color: #fff;
+    font-weight: bold;
     border-radius: 50px;
-    box-shadow: 0 2px 2px rgba(0,0,0,.5); 
     text-align:center;
     cursor: pointer;
-    width: 90px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     font-size: 17px;
 }
 
 .backBtn:hover{ 
-    background-color: #fff;
+    background-color: rgba(173, 85, 214, 0.514);
     border: none;
-    color: #030022;
+    color: #fff;
     transition-delay: 0.2s;
     transition: 0.8s;
 }
@@ -99,16 +95,19 @@ a {
     float: left;
     height: auto; 
     width: auto; 
-    max-width: 500px; 
-    max-height: 500px;
-    margin-top: 9%;
+    max-width: 450px; 
+    max-height: 450px;
+    margin-top: 15%;
     margin-left: 2%;
+    box-shadow: 3px 5px 5px rgba(3, 32, 51, .8);
 } 
 
 .loading{
     align-items: center;
-    font-family: Lato, Arial, Helvetica, sans-serif;
-    color: white;
+    font: bold 'Signika', sans-serif;
+    color: rgb(77, 77, 77);
     font-size: 180%;
     font-weight: bolder;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);

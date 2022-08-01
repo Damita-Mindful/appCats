@@ -28,7 +28,7 @@
     width: 99vw;
     height: 99vh;
     margin: 1vh 1vw;
-    top: 0;
+    top: 20%;
 }
 
 h1 {
@@ -161,7 +161,7 @@ h1 span:nth-child(14) {
     outline: none;
     position: relative;
     padding: 10px;
-    margin-left: 8%;
+    margin-left: 3%;
 }
 
 .button:hover,

@@ -18,6 +18,7 @@ export default function Detail() {
 
   return (
     <div className={styles.bkg}>
+      <div>
       {myCat.length > 0 ? (
         <div className={styles.container} >
           <img className={styles.image} src={myCat[0].image} 
@@ -45,6 +46,7 @@ export default function Detail() {
         <button className={styles.backBtn}>Home
         </button>
       </Link>
+      </div>
       </div>
     </div>
   );

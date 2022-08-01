@@ -19,21 +19,24 @@
   .link {
     color: #fff;
     display:inline-flex;
-    padding: 12px;
-    margin: 2px;
+    padding: 8px;
+    margin: 4px;
     border: none;
     cursor: pointer;
-    background-color: rgba(26, 23, 24, 0.65);
+    background-color: rgb(219, 126, 141);
     border-radius: 50%;
     list-style:none;
-    width: 10px;
-    height: 10px;
-    font-size: 12px;
+    width: 25px;
+    height: 25px;
     align-items: center;
     font-size: 14px;
-    text-align: center;
+    
   }    
   
+  .pages{
+    margin-bottom: 10%;
+  }
+
   .link:hover {
     background-color: #fff;
     border: none;

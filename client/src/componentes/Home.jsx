@@ -111,14 +111,7 @@ export default function Home() {
                     key={el.id}
                     name={el.name}
                     image={el.image}
-                    /* temperament={
-                      el.temperament
-                        ? el.temperament
-                        : el.temperaments &&
-                          el.temperaments.map((el) => `${el.name}, `)
-                    } */
-                   /*  origin={el.origin}
-                    dogFriendly={el.dog_friendly} */
+
                   />
                 </Link>
               </div>
@@ -130,7 +123,7 @@ export default function Home() {
       </div>
       
       {/* Paginated*/}
-      <div>
+      <div className={styles.pages}>
         <Paginated
           catsPage={catsPage}
           allCats={allCats.length}

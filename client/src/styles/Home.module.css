@@ -4,19 +4,7 @@
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;  
-    overflow: hidden;
-    
-    /*  background-position: center center; 
-    position: relative;
-    justify-content: space-between;
-    display: flex;
-    height: 125vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-bottom: 100%;
-    background-attachment: fixed;
-    overflow: hidden;
-    scroll-behavior: hidden;   */ 
+    overflow: hidden; 
 }
 
 .header{
@@ -290,15 +278,17 @@
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
-    margin-top:10px;
-    margin-left: 8.5%;
+    margin-top:25%;
+    margin-left: 12%;
+    margin-right: 8.5%;
+    margin-bottom: 6%;
 } 
 
 .catContainer {
     display: flex;
     text-decoration: none;
-    margin-top: 15%;
-    
+    margin-top: 0%;
+    margin-bottom: 8%;
 }
 
 .a {
@@ -322,6 +312,10 @@
     width: 90px;
     height: 50px;
     font-size: 17px;
+}
+
+.pages{
+    margin-bottom: 40%;
 }
 
 .loading{

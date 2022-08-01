@@ -9,7 +9,7 @@ export default function Paginated({ catsPage, allCats, paginated }) {
     pages.push(i + 1);
   }
   return (
-    <nav>
+    <nav className={styles.pages}>
       <ul className={styles.paged}>
         {pages?.map((num) => (
           <div className={styles.listContainer} key={num}>
